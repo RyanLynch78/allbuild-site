@@ -21,6 +21,16 @@ p{margin:0 0 16px}
 footer{padding:30px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 footer a{color:inherit}
 @media(min-width:640px){h1{font-size:2.8rem}}
+.founder{display:flex;gap:24px;align-items:flex-start;margin:0 0 16px}
+.founder-photo{width:300px;max-width:100%;height:auto;border-radius:12px;flex-shrink:0;background:var(--bg2)}
+.founder-copy h1{margin-top:0}
+.founder-copy p{margin-bottom:0}
+@media(max-width:639px){
+  .founder{flex-direction:column;align-items:center;text-align:center}
+  .founder-photo{width:260px}
+  .founder-copy{width:100%}
+  .founder-copy p{text-align:left}
+}
 .photos{display:grid;gap:16px;grid-template-columns:1fr 1fr}
 .photos figure{margin:0}
 .photos a{display:block}
@@ -34,8 +44,13 @@ footer a{color:inherit}
 
 <main>
 <section style="border-top:0;padding-top:10px">
+<div class="founder">
+<img class="founder-photo" src="images/ryan-lynch.webp" alt="Ryan Lynch on a job site" width="600" height="800" decoding="async">
+<div class="founder-copy">
 <h1>About Ryan Lynch, Founder</h1>
 <p>I grew up in La Porte, Texas, outside Houston. My dad founded and ran Vi-Tech, the top industrial balancing shop in the Houston area, and I started welding and machining there as a kid. I learned fabrication, machining, balancing, and rotating-equipment repair from him and the master machinists and fabricators around him.</p>
+</div>
+</div>
 <p>Martial arts got me interested in Japan. I majored in Japanese at Austin College in Sherman, came a credit or two short of a studio art minor, and later finished the coursework for a graduate degree in speech-language pathology at UT Austin before choosing a different path.</p>
 <p>The whole time, I kept building: commercial and high-end residential cabinets, high-end remodels, and projects from the ground up. Trades are like languages, and knowing one makes the next one easier to learn. Since 2016 I've worked full time as a general contractor, subcontractor, fabricator, project manager, and design-build contractor through Ogunde Design Build, on both commercial and residential jobs.</p>
 <p>Over the years I got to know hundreds of contractors and trade pros in Austin, and for a time I moderated Contractor Connection, the largest contractor Facebook group in Texas. I saw the same problems on every kind of job, from small low-budget work to high-end builds: trust, skill, and communication. Too much money went to middlemen who added cost without adding work, so prices went up while quality and trust went down.</p>
